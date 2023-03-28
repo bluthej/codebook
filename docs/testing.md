@@ -100,7 +100,7 @@ AssertionError
 
 Notice that there are no parentheses between `assert` and the statement. `assert` is great for inline tests, for example checking whether the shape or a matrix is as expected after permuting its indices.
 
-We can also assemble multiple assert operations to create a lightweight test suite. You can hide your asserts behind an `__name__ == '__main__'` statement, so that they will only run when you directly run a file. Let's write some tests in `fib.py`:
+We can also assemble multiple assert operations to create a lightweight test suite. You can hide your asserts behind a `__name__ == '__main__'` statement, so that they will only run when you directly run a file. Let's write some tests in `fib.py`:
 
 ```
 def fib(x):
