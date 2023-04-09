@@ -31,7 +31,7 @@ This is how you get better at programming: by programming with people who are be
 
 *Pair programming* is a very effective method of sharing knowledge through active practice. It's commonly used in industry. Two programmers collaborate actively on a programming task. In the traditional driver-and-navigator style, two programmers are physically co-located. One of them---the *driver* or pilot -- physically types the code into the terminal or code editor. They think about micro-issues in the code (tactics): what goes into the body of a `for` loop, the syntax of the code, etc.
 
-The *navigator* or co-pilot assist the driver in telling them what to write. They typically focus on macro issues: what a function should accomplish, how the code is structured, etc. They can also perform other tasks on a second laptop, for example looking up documentation.
+The *navigator* or co-pilot assists the driver in telling them what to write. They typically focus on macro issues: what a function should accomplish, how the code is structured, etc. They can also perform other tasks on a second laptop, for example looking up documentation.
 
 ```{margin}
 I wrote this book in part to become better at the skills I'm now teaching you. Teaching is a great way to learn.
