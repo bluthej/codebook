@@ -216,7 +216,7 @@ def count_word(f, line):
 
 Docstrings for this function will appear in the REPL and in jupyter notebook when you type `help(count_word)`. They will also be parsed and displayed in IDEs like vscode and PyCharm.
 
-See which style of docstring you prefer and stick to it. Autodocstring, an extension in vscode, can you help you [automatically generate a docstring stub](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring). It uses the Google style by default.
+See which style of docstring you prefer and stick to it. Autodocstring, an extension in vscode, can help you [automatically generate a docstring stub](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring). It uses the Google style by default.
 
 ```{warning}
 Docstrings can age poorly. When your arguments change, it's easy to forget to change the docstring accordingly. I prefer to wait until later in the development process when function interfaces are stable to start writing docstrings.
