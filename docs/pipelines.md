@@ -17,7 +17,7 @@ It's a common practice to use graphical tools (GUIs) to perform analyses. It als
 
 One approach is to textually document in detail what piece of code was run to obtain results. This method can be tedious and error-prone. It's usually worth it to push as much computation as possible into reproducible pipelines which are self-documenting. That way, there's no ambiguity about how results were produced.
 
-Manual steps involving GUI tools should produce results which can be ingested by text-based pipelines. For instance, a interactive GUI to define regions-of-interest (ROI) should export the ROI coordinates in a way that the pipeline can ingest it.
+Manual steps involving GUI tools should produce results which can be ingested by text-based pipelines. For instance, an interactive GUI to define regions-of-interest (ROI) should export the ROI coordinates in a way that the pipeline can ingest it.
 
 ### Write console programs
 
@@ -188,7 +188,7 @@ Now there's no ambiguity about how that figure was generated. You can repeat the
 Most services in this space are closed-source, cloud-based commercial services available for free to researchers. [Wandb](https://wandb.ai/) and [Neptune](https://neptune.ai/) record machine learning results. [Gigantum](https://gigantum.com) keeps a rich log of jupyter notebook executions. `datalad` is libre software that can [record and document dataset manipulations](http://docs.datalad.org/en/stable/generated/man/datalad-run.html).
 ```
 
-A more full-featured way of doing this is to use a specialized tool to post results to a centralized database. Most of the offerings in this space are cloud-based commercial services. You post your results---whether scalars, whole tables, figures, etc.---to a centralized server through a bit of python code, and it takes care of versioning. In the screenshot below, I used [wandb.ai](https://wandb.ai/) to record the outcome of a machine learning pipeline. The record tells me what command that was run, the git hash, meta-information about which computer was used to run the pipeline, as well as the outcome. There is no ambiguity about provenance.
+A more full-featured way of doing this is to use a specialized tool to post results to a centralized database. Most of the offerings in this space are cloud-based commercial services. You post your results---whether scalars, whole tables, figures, etc.---to a centralized server through a bit of python code, and it takes care of versioning. In the screenshot below, I used [wandb.ai](https://wandb.ai/) to record the outcome of a machine learning pipeline. The record tells me what command was run, the git hash, meta-information about which computer was used to run the pipeline, as well as the outcome. There is no ambiguity about provenance.
 
 ```{figure} figures/wandb.png
 ---
@@ -247,7 +247,7 @@ Some things are in our control and others not. [...] If [a thing] concerns anyth
 
 Documentation contains the long-term memory of a project. When you're writing documentation, you're ensuring that your code will remain useful for a long time. Code should be self-documenting to a large degree, and you should put effort into automating most of the steps involved in generating figures and tables in your paper. However, you will still need to write some textual documentation.
 
-You can take that occasion to reflect on your project. Sometimes, you'll find that it's more productive to rewrite bad code than to write complex explanations for it. At other times, especially at the very end of a project, refactoring will not be worth the effort, and you will have to let things go. As part of the documentation, you can write about how you could improve on your project. You can use a framing device device like _three lessons I learned in this project_. Learn from your mistakes and do better next time.
+You can take that occasion to reflect on your project. Sometimes, you'll find that it's more productive to rewrite bad code than to write complex explanations for it. At other times, especially at the very end of a project, refactoring will not be worth the effort, and you will have to let things go. As part of the documentation, you can write about how you could improve on your project. You can use a framing device like _three lessons I learned in this project_. Learn from your mistakes and do better next time.
 
 ```{admonition} 5-minute exercise
 Add a README.md file to a project you're working on right now
