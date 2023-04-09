@@ -13,11 +13,11 @@ Let's look at how we can use the suggested organization in a real project. We us
 
 ## What is Zipf's law, anyway?
 
-Zipf's law comes from quantitative linguistics. It states the most used word in a language is used twice as much as the second most used word, three times as much of the third, etc. It's an empirical law that holds in different languages and texts. There's a lot of interesting theories about why it should hold: [have a look at the Wikipedia article if you're curious](https://en.wikipedia.org/wiki/Zipf%27s_law). A generalized form of Zipf's law states that:
+Zipf's law comes from quantitative linguistics. It states that the most used word in a language is used twice as much as the second most used word, three times as much of the third, etc. It's an empirical law that holds in different languages and texts. There's a lot of interesting theories about why it should hold: [have a look at the Wikipedia article if you're curious](https://en.wikipedia.org/wiki/Zipf%27s_law). A generalized form of Zipf's law states that:
 
 $$p(r) = \frac{1}{Cr^\alpha}$$
 
-That is, the frequency of $r^{th}$ most frequent word in a language is a power law with exponent $\alpha$; the canonical Zipf's law is obtained when $\alpha=1$. $C$ is a constant that makes the distribution add up to 1.
+That is, the frequency of the $r^{th}$ most frequent word in a language is a power law with exponent $\alpha$; the canonical Zipf's law is obtained when $\alpha=1$. $C$ is a constant that makes the distribution add up to 1.
 
 ## Our project
 
@@ -63,7 +63,7 @@ width: 100%
 The Zipf project split into different sub-components.
 ```
 
-We'll create one module to compute the distribution of words, and another to fit Zipf's law. We will create tests for each of those two modules. We'll wrap the two modules as well as glue code inside a command line tool. Plotting will take place in jupyter notebook, which makes it easy to change plots interactively.
+We'll create one module to compute the distribution of words, and another to fit Zipf's law. We will create tests for each of those two modules. We'll wrap the two modules as well as glue code inside a command line tool. Plotting will take place in a jupyter notebook, which makes it easy to change plots interactively.
 
 I encourage you to also have a look at the Python RSE github repo for an alternative implementation to examine the tradeoffs in different implementations.
 
